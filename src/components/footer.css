@@ -1,0 +1,55 @@
+.footer{
+    margin-top: 4.5rem;
+    display: flex;
+    /* height: 22vh; */
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    color: azure;
+    width: 20%;
+    /* margin-left: 5rem; */
+    justify-content: center;
+}
+.icon a{
+    display: flex;
+}
+.icon p{
+    margin-left: 1rem;
+}
+
+.name{
+    width: 15%;
+    border-right: 4px solid white;
+    display: flex;
+    /* justify-content: space-between;s */
+    text-align: center;
+}
+.name h3{
+    margin-right: 1rem;
+}
+.copyright{
+    color: azure;
+    text-align: center;
+    margin-right: 1rem;
+}
+@media screen and (max-width:640px) {
+    .footer{
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name{
+        border: none;
+    }
+    .copyright{
+        height: 1rem;
+    }
+    .icon{
+        display: contents;
+    }
+    .icon p{
+        margin-right: 2rem;
+    }
+}

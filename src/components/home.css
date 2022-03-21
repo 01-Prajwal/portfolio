@@ -1,0 +1,62 @@
+video{
+    width: 100%;
+    z-index: -1;
+    height: 36rem;
+    object-fit: cover;
+}
+.home::before{
+    background-image: linear-gradient(to bottom right, red, yellow);
+
+}
+.content  h1{
+        text-transform: uppercase;
+        
+}
+.content {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+}
+.content p{
+    text-transform: uppercase;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card p{
+    max-width: 15rem;
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+.card h3{
+    text-transform: uppercase;
+}
+.card-img{
+    height: 50vh;
+}
+.icons{
+    color: #b2c5d6;;
+}
+
+@media screen and (max-width:640px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 2.5rem;
+    }
+    .content{
+        top: 36vh;
+    }
+}
